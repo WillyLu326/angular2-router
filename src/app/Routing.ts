@@ -6,8 +6,8 @@ import { ModuleWithProviders } from '@angular/core';
 
 import { HomeComponent } from "./home/home.component";
 import { ContactComponent } from "./contact/contact.component";
-import { UserComponent } from "./user/user.component";
 import { NotfoundComponent } from "./notfound/notfound.component";
+import { AboutComponent } from "./about/about.component";
 
 const APP_ROUTES: Routes =[
   {
@@ -19,8 +19,13 @@ const APP_ROUTES: Routes =[
     component: ContactComponent
   },
   {
-    path: 'user',
-    component: UserComponent
+    path: 'about',
+    component: AboutComponent,
+    // children: [
+    //   {
+    //     path: ''
+    //   }
+    // ]
   },
   {
     path: '**',
